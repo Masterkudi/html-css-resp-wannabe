@@ -132,6 +132,9 @@ img {
     .container {
         max-width: 1440px;
     }
+    .text-center {
+        min-width: 1440px;
+    }
  }
 
  @media screen and (max-width: 1160px) {
@@ -140,8 +143,16 @@ img {
         max-width: 1160px;
     }
     .text-center {
-        max-width: 1160px;
-        min-width: 768px;
+        min-width: 1160px;
+    }
+ }
+
+ @media screen and (max-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+    .text-center {
+        min-width: 992px;
     }
  }
 
@@ -155,11 +166,21 @@ img {
  }
 
  @media screen and (max-width: 480px) {
+
+    html.container {
+        margin-bottom: 0;
+    }
     
     .container {
         max-width: 480px;
         min-width: 0;
+        padding-top: 48px;
     }
+
+    .steps.text-center {
+        margin-bottom: 0;
+    }
+
     .text-center {
         min-width: 480px;
     }
@@ -175,9 +196,9 @@ img {
     }
 
     .col {
-        min-width: 340px;
+        min-width: 360px;
     }
-    html .why-us {
+  .why-us {
         background-color: #232323;
     }
  }
